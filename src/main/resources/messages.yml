@@ -1,0 +1,4 @@
+prefix: "&b[CharmOrb]&r "
+vault-disabled: "&cVault Economy が見つからないため、売却機能は無効です。"
+no-permission: "&c権限がありません。"
+player-only: "プレイヤーのみ実行できます。"

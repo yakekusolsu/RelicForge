@@ -1,0 +1,125 @@
+name: CharmOrbPlugin
+version: ${version}
+main: jp.yourname.charmorb.CharmOrbPlugin
+api-version: "1.21"
+softdepend:
+  - Vault
+  - MythicMobs
+commands:
+  orb:
+    description: オーブ操作コマンド
+    usage: /orb help
+    permission: charmorb.command.orb
+    permission-message: "§c権限がありません。"
+  sellorb:
+    description: オーブ売却コマンド
+    usage: /sellorb
+    permission: charmorb.command.sellorb
+    permission-message: "§c権限がありません。"
+  charm:
+    description: チャーム操作コマンド
+    usage: /charm help
+    permission: charmorb.command.charm
+    permission-message: "§c権限がありません。"
+permissions:
+  charmorb.admin:
+    default: op
+    children:
+      charmorb.command.orb: true
+      charmorb.command.sellorb: true
+      charmorb.command.charm: true
+      charmorb.command.orb.help: true
+      charmorb.command.orb.gui: true
+      charmorb.command.orb.list: true
+      charmorb.command.orb.check: true
+      charmorb.command.orb.effects: true
+      charmorb.command.orb.sell: true
+      charmorb.command.orb.give: true
+      charmorb.command.orb.give-random: true
+      charmorb.command.orb.give-rarity: true
+      charmorb.command.orb.give-scroll: true
+      charmorb.command.orb.give-all: true
+      charmorb.command.orb.roll: true
+      charmorb.command.orb.setslots: true
+      charmorb.command.orb.insert: true
+      charmorb.command.orb.remove: true
+      charmorb.command.orb.reload: true
+      charmorb.command.charm.help: true
+      charmorb.command.charm.slot: true
+      charmorb.command.charm.list: true
+      charmorb.command.charm.dex: true
+      charmorb.command.charm.sell: true
+      charmorb.command.charm.give: true
+      charmorb.command.charm.give-scroll: true
+      charmorb.command.charm.give-test: true
+  charmorb.use:
+    default: true
+    children:
+      charmorb.command.orb: true
+      charmorb.command.sellorb: true
+      charmorb.command.charm: true
+      charmorb.command.orb.help: true
+      charmorb.command.orb.gui: true
+      charmorb.command.orb.list: true
+      charmorb.command.orb.check: true
+      charmorb.command.orb.effects: true
+      charmorb.command.orb.sell: true
+      charmorb.command.charm.help: true
+      charmorb.command.charm.slot: true
+      charmorb.command.charm.list: true
+      charmorb.command.charm.dex: true
+      charmorb.command.charm.sell: true
+  charmorb.command.orb:
+    default: true
+  charmorb.command.sellorb:
+    default: true
+  charmorb.command.charm:
+    default: true
+  charmorb.command.orb.help:
+    default: true
+  charmorb.command.orb.gui:
+    default: true
+  charmorb.command.orb.list:
+    default: true
+  charmorb.command.orb.check:
+    default: true
+  charmorb.command.orb.effects:
+    default: true
+  charmorb.command.orb.sell:
+    default: true
+  charmorb.command.orb.give:
+    default: op
+  charmorb.command.orb.give-random:
+    default: op
+  charmorb.command.orb.give-rarity:
+    default: op
+  charmorb.command.orb.give-scroll:
+    default: op
+  charmorb.command.orb.give-all:
+    default: op
+  charmorb.command.orb.roll:
+    default: op
+  charmorb.command.orb.setslots:
+    default: op
+  charmorb.command.orb.insert:
+    default: op
+  charmorb.command.orb.remove:
+    default: op
+  charmorb.command.orb.reload:
+    default: op
+  charmorb.command.charm.help:
+    default: true
+  charmorb.command.charm.slot:
+    default: true
+  charmorb.command.charm.list:
+    default: true
+  charmorb.command.charm.dex:
+    default: true
+  charmorb.command.charm.sell:
+    default: true
+  charmorb.command.charm.give:
+    default: op
+  charmorb.command.charm.give-scroll:
+    default: op
+  charmorb.command.charm.give-test:
+    default: op
